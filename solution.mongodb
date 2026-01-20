@@ -13,28 +13,6 @@ db.employees.insertMany([
 db.employees.find({ department: "IT" })
 
 
-db.employees.find({ name: "Rahul" })
 
-
-db.employees.find().pretty()
-
-
-db.employees.distinct("department")
-
-
-db.employees.find({ salary: { $gt: 50000 } })
-
-
-db.employees.find({ salary: { $lt: 30000 } })
-
-
-db.employees.find({ age: { $gte: 30 } })
-
-
-db.employees.find({ age: { $lte: 25 } })
-
-db.employees.find({
-  salary: { $gte: 40000, $lte: 80000 }
-})
 
 
